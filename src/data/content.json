@@ -1,0 +1,282 @@
+{
+  "header": {
+    "logo": "Nexcent",
+    "logos": [
+      {
+        "id": 1,
+        "name": "logo",
+        "logoUrl": "https://placehold.co/45x50/4caf4f/fff?text=LOGO"
+      }
+    ],
+    "navigation": [
+      { "id": 1, "label": "Home", "href": "#" },
+      { "id": 2, "label": "Service", "href": "#" },
+      { "id": 3, "label": "Feature", "href": "#" },
+      { "id": 4, "label": "Product", "href": "#" },
+      { "id": 5, "label": "Testimonial", "href": "#" },
+      { "id": 6, "label": "FAQ", "href": "#" }
+    ],
+    "loginText": "Login",
+    "signupText": "Sign up"
+  },
+  "hero": {
+    "slides": [
+      {
+        "title": "Lessons and insights",
+        "highlight": "from 8 years",
+        "description": "Where to grow your business as a photographer: site or social media?",
+        "buttonText": "Register",
+        "imageUrl": "https://placehold.co/415x435/4caf4f/fff?text=Slide+1",
+        "imageAlt": "Hero Slide 1"
+      },
+      {
+        "title": "Lessons and insights",
+        "highlight": "from 8 years",
+        "description": "Where to grow your business as a photographer: site or social media?",
+        "buttonText": "Register",
+        "imageUrl": "https://placehold.co/415x435/4caf4f/fff?text=Slide+2",
+        "imageAlt": "Hero Slide 2"
+      },
+      {
+        "title": "Lessons and insights",
+        "highlight": "from 8 years",
+        "description": "Where to grow your business as a photographer: site or social media?",
+        "buttonText": "Register",
+        "imageUrl": "https://placehold.co/415x435/4caf4f/fff?text=Slide+3",
+        "imageAlt": "Hero Slide 3"
+      }
+    ]
+  },
+  "clients": {
+    "title": "Our Clients",
+    "description": "We have been working with some Fortune 500+ clients",
+    "logos": [
+      {
+        "id": 1,
+        "name": "Client 1",
+        "logoUrl": "https://placehold.co/45x50/4caf4f/fff?text=1"
+      },
+      {
+        "id": 2,
+        "name": "Client 2",
+        "logoUrl": "https://placehold.co/45x50/4caf4f/fff?text=2"
+      },
+      {
+        "id": 3,
+        "name": "Client 3",
+        "logoUrl": "https://placehold.co/45x50/4caf4f/fff?text=3"
+      },
+      {
+        "id": 4,
+        "name": "Client 4",
+        "logoUrl": "https://placehold.co/45x50/4caf4f/fff?text=4"
+      },
+      {
+        "id": 5,
+        "name": "Client 5",
+        "logoUrl": "https://placehold.co/45x50/4caf4f/fff?text=5"
+      },
+      {
+        "id": 6,
+        "name": "Client 6",
+        "logoUrl": "https://placehold.co/45x50/4caf4f/fff?text=6"
+      },
+      {
+        "id": 7,
+        "name": "Client 7",
+        "logoUrl": "https://placehold.co/45x50/4caf4f/fff?text=7"
+      }
+    ]
+  },
+  "community": {
+    "title": "Manage your entire community in a single system",
+    "description": "Who is Nexcent suitable for?",
+    "cards": [
+      {
+        "id": 1,
+        "title": "Membership Organisations",
+        "description": "Our membership management software provides full automation of membership renewals and payments",
+        "iconUrl": "https://placehold.co/66x60/4caf4f/fff"
+      },
+      {
+        "id": 2,
+        "title": "National Associations",
+        "description": "Our membership management software provides full automation of membership renewals and payments",
+        "iconUrl": "https://placehold.co/66x60/4caf4f/fff"
+      },
+      {
+        "id": 3,
+        "title": "Clubs And Groups",
+        "description": "Our membership management software provides full automation of membership renewals and payments",
+        "iconUrl": "https://placehold.co/66x60/4caf4f/fff"
+      }
+    ],
+    "about": {
+      "title": "Join the Nexcent Community",
+      "description": "Become a member of the Nexcent community and gain access to our exclusive resources and support network.",
+      "buttonText": "Join Now"
+    }
+  },
+  "contact_the_unseen": {
+    "imageUrl": "https://placehold.co/352x323/4caf4f/fff",
+    "imageAlt": "Contact",
+    "isImageLeft": true,
+    "title": "The unseen of spending three years at Pixelgrade",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sit amet justo ipsum.Sed accumsan quam vitae metus varius fringgilla. Pellentesque placerat vestibulum lorem sed porta. Nuilam mattis trisque iaculis",
+    "buttonText": "Learn More"
+  },
+  "stats": {
+    "title": "Helping a local",
+    "highlight": "business reinvent itself",
+    "description": "We reached here with our hard work and dedication",
+    "metrics": [
+      {
+        "id": 1,
+        "value": "2,245,341",
+        "label": "Members",
+        "iconUrl": "https://placehold.co/66x60/4caf4f/fff"
+      },
+      {
+        "id": 2,
+        "value": "46,328",
+        "label": "Clubs",
+        "iconUrl": "https://placehold.co/66x60/4caf4f/fff"
+      },
+      {
+        "id": 3,
+        "value": "828,867",
+        "label": "Event Bookings",
+        "iconUrl": "https://placehold.co/66x60/4caf4f/fff"
+      },
+      {
+        "id": 4,
+        "value": "1,926,436",
+        "label": "Payments",
+        "iconUrl": "https://placehold.co/66x60/4caf4f/fff"
+      }
+    ]
+  },
+  "contact_how_to": {
+    "imageUrl": "https://placehold.co/322x446/4caf4f/fff",
+    "imageAlt": "Contact",
+    "isImageLeft": true,
+    "title": "How to design your site footer like we did",
+    "description": "Donec a eros justo. Fusce egestas tristique ultricies. Nam tempor augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec a eros justo. Fusce egestas tristique ultricies. Nam tempor augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec a eros justo. Fusce egestas tristique ultricies.",
+    "buttonText": "Learn more"
+  },
+  "testimonial": {
+    "quote": "Maecenas digissim justo eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum risus lectus.Maecenas digissim justo eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum risus lectus.Maecenas digissim justo eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum risus lectus.Maecenas digissim justo eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum risus lectus.justo eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum risus lectus.Maecenas digissim justo eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum risus lectus. Maecenas loboritis sme dui, vel retrum risus lectus.",
+
+    "author": "Tim Smith",
+    "position": "British Dragon Boat Racing Association",
+    "imageUrl": "https://placehold.co/315x334/4caf4f/fff?text",
+    "iconUrl": [
+      {
+        "id": 1,
+        "url": "https://placehold.co/66x60/4caf4f/fff"
+      },
+      {
+        "id": 2,
+        "url": "https://placehold.co/66x60/4caf4f/fff"
+      },
+      {
+        "id": 3,
+        "url": "https://placehold.co/66x60/4caf4f/fff"
+      },
+      {
+        "id": 4,
+        "url": "https://placehold.co/66x60/4caf4f/fff"
+      },
+      {
+        "id": 5,
+        "url": "https://placehold.co/66x60/4caf4f/fff"
+      },
+      {
+        "id": 6,
+        "url": "https://placehold.co/66x60/4caf4f/fff"
+      }
+    ],
+    "meetAllText": "Meet all customers"
+  },
+  "blog": {
+    "title": "Caring is the new marketing",
+    "description": "Donec a eros justo. Fusce egestas tritique ultricies. Nam tempor.augue nec tincidunt molesite, massa nunv varius arcu, AT SCELERISQUE ELIT erat a magna. Donec a eros justo. Fusce egestas tritique ultricies more.",
+    "articles": [
+      {
+        "id": 1,
+        "imageUrl": "https://placehold.co/370x284/4caf4f/fff",
+        "title": "Creating Streamlined Safeguarding Processes with OneRen",
+        "readMoreText": "Readmore"
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://placehold.co/370x284/4caf4f/fff",
+        "title": "What are your safeguafaring responsibilities and how can you manage them?",
+        "readMoreText": "Readmore"
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://placehold.co/370x284/4caf4f/fff",
+        "title": "Reamping the Membership Model with Triathlon Australia",
+        "readMoreText": "Readmore"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Pellentesque suscipit fringilla libero eu.",
+    "buttonText": "Get a Demo"
+  },
+  "footer": {
+    "logo": "Nexcent",
+    "logoUrl": "https://placehold.co/45x50/4caf4f/fff?text=LOGO",
+    "copyright": "Copyright 2017 Nexcent ltd. , All rights reserved",
+    "icons": [
+      {
+        "id": 1,
+        "icon": "https://placehold.co/35x35/4caf4f/fff",
+        "href": "#"
+      },
+      {
+        "id": 2,
+        "icon": "https://placehold.co/35x35/4caf4f/fff",
+        "href": "#"
+      },
+      {
+        "id": 3,
+        "icon": "https://placehold.co/35x35/4caf4f/fff",
+        "href": "#"
+      },
+      {
+        "id": 4,
+        "icon": "https://placehold.co/35x35/4caf4f/fff",
+        "href": "#"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Company",
+        "links": [
+          { "id": 1, "label": "About Us", "href": "#" },
+          { "id": 2, "label": "Blog", "href": "#" },
+          { "id": 3, "label": "Contact Us", "href": "#" },
+          { "id": 4, "label": "Pricing", "href": "#" },
+          { "id": 5, "label": "Testimonials", "href": "#" }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          { "id": 1, "label": "Help Center", "href": "#" },
+          { "id": 2, "label": "Terms of service", "href": "#" },
+          { "id": 3, "label": "Legal", "href": "#" },
+          { "id": 4, "label": "Privacy Policy", "href": "#" },
+          { "id": 5, "label": "Status", "href": "#" }
+        ]
+      }
+    ],
+    "newsletter": {
+      "title": "Stay up to date",
+      "placeholder": "Your email address"
+    }
+  }
+}
