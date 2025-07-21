@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --font-inter: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-custom {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+  font-family: var(--font-inter);
+}
+.padding-custom {
+  padding: 20px
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: var(--font-inter);
+  line-height: inherit;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
