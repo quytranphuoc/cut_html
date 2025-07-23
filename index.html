@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexcent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container-custom {
+      max-width: 1240px;
+      padding: 0 20px;
+      margin: 0 auto;
+      font-family: Gilroy, sans-serif;
+      background-color: var(--white-bg);
+    }
+    body {
+      margin: 0;
+      background-color: var(--white-bg);
+      font-family: Gilroy, sans-serif;
+      line-height: inherit;
+    }
+
+    swiper-container::part(bullet-active) {
+      background-color: #4caf4f !important;
+    }
+    swiper-container::part(bullet) {
+      background-color: #4caf4f !important;
+      opacity: 0.2;
+    }
+    swiper-container .swiper-cube .swiper-cube-shadow {
+      display: none;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          container: false,
+          colors: {
+            "orange-primary": "#ff8a00",
+            "orange-primary-11": "rgba(229, 132, 17, 1)",
+            "orange-primary-1": "rgba(246, 151, 63, 1)",
+            "blue-primary": "#00d6c9",
+            "dark-gray": "#1e1e1e",
+            "dark-gray-01": "rgba(30, 30, 30, 1)",
+            "dark-gray-1": "rgba(13, 27, 57, 1)",
+            "white-bg": "#ffffff",
+            "gray-bg": "rgba(124, 124, 124, 1)",
+            "light-gray-bg": "#f7f7f7",
+            "white-border-60": "#ffffff99",
+            "white-border-15": "#ffffff26",
+            "white-border-01": "rgba(255, 255, 255, 1)",
+            "white-border-02": "rgba(255, 255, 255, 0.2)",
+            "white-border-06": "rgba(255, 255, 255, 0.6)",
+            "white-border-47": "rgba(247, 247, 247, 1)",
+            "white-border-50": "rgba(250, 250, 250, 1)",
+            "white-border-84": "rgba(255, 255, 255, 0.84)",
+            "pale-border-1": "rgba(238, 238, 238, 1)",
+            "text-light-gray": "#f5f5f5",
+            "text-inter": "rgba(141, 141, 141, 1)",
+            "text-pc": "rgba(13, 27, 57, 1)",
+            "yellow-primary": "rgba(246, 183, 111, 1)",
+          },
+          fontFamily: {
+            gilroy: ["Gilroy", "sans-serif"],
+            dmsans: ["DM Sans", "sans-serif"],
+            inter: ["Inter", "sans-serif"],
+          },
+          fontSize: {
+            xxxl: "80px",
+          },
+          screens: {
+            "xs-custom-max": "300px",
+            "xs-custom-min": "450px",
+            "xs-custom-max-lv": "480px",
+            "xs-custom": "640px",
+            "sm-custom": "681px",
+            "md-custom": "769px",
+            "md-custom-min": "861px",
+            "md-custom-max": "992px",
+            "lg-custom-max": "1024px",
+            "lg-custom": "1025px",
+            "xl-custom-max": "1201px",
+            "xl-custom": "1281px",
+            "2xl-custom": "1347px",
+          },
+        },
+      },
+    };
+  </script>
+  <body>
+    <!-- Header -->
+    <header
+      id="main-header"
+      class="flex fixed left-[0px] right-0 m-auto w-full h-[71px] z-[100] bg-[#f5f7fa] content-center md-custom:block hidden"
+    >
+      <div class="container-custom flex items-center justify-between">
+        <div class="flex items-center">
+          <h1 class="flex items-center gap-[10px]">
+            <img src="./img/logo.png" alt="logo" />
+            <span class="font-bold text-3xl">Nexcent</span>
+          </h1>
+        </div>
+        <div class="flex items-center">
+          <nav>
+            <ul class="flex items-center md-custom-max:gap-[45px] gap-[20px]">
+              <li><a href="#" title="Home">Home</a></li>
+              <li><a href="#" title="Service">Service</a></li>
+              <li><a href="#" title="Feature">Feature</a></li>
+              <li><a href="#" title="Product">Product</a></li>
+              <li><a href="#" title="Testimonial">Testimonial</a></li>
+              <li><a href="#" title="FAQ">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="md-custom-max:flex hidden items-center gap-[30px]">
+          <button
+            type="button"
+            title="Login"
+            class="text-lg font-inter text-[#89c98c]"
+          >
+            Login
+          </button>
+          <button
+            type="button"
+            title="Sign up"
+            class="text-lg font-inter bg-[#4caf4f] w-[90px] h-[36px] rounded-[5px] border-solid border-[#4caf4f] text-white"
+          >
+            Sign up
+          </button>
+        </div>
+        <button
+          id="menu-toggle"
+          class="md-custom-max:hidden text-white bg-[rgba(30,30,30,0.8)] w-[40px] h-[40px] flex items-center justify-center rounded"
+        >
+          ☰
+        </button>
+        <div
+          id="mobile-menu"
+          class="hidden absolute top-[60px] right-0 bg-white shadow-lg rounded p-4 w-[150px]"
+        >
+          <ul class="flex flex-col gap-4 text-center">
+            <li><a href="#" class="text-[#89c98c]">Login</a></li>
+            <li>
+              <a
+                href="#"
+                class="bg-[#4caf4f] text-white px-3 py-1 rounded block text-center"
+                >Sign up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-[#f5f7fa]">
+      <swiper-container
+        class="pt-[155px] pb-[96px] container-custom"
+        pagination="true"
+        effect="cube"
+        grab-cursor="true"
+        cube-effect-shadow="false"
+        cube-effect-shadow-offset="100"
+        cube-effect-shadow-scale="0.94"
+        style="
+          --swiper-pagination-display: none !important;
+          --swiper-pagination-top: 500px;
+        "
+      >
+        <swiper-slide>
+          <div
+            class="flex items-center justify-between mx-auto md:flex-row flex-col-reverse gap-[40px] pr-[9px]"
+          >
+            <div class="flex-1 h-auto opacity-80">
+              <h2 class="font-bold text-[32px] xl:text-[66px] md:text-[40px]">
+                Lessons and insights<br />
+                <span class="text-[#4caf4f]">from 8 years</span>
+              </h2>
+              <p
+                class="text-lg font-regular text-[#1e1e1e] opacity-80 mb-[25px]"
+              >
+                Where to grow your business as a photographer: site or social
+                media?
+              </p>
+              <div
+                class="w-[128px] h-[55px] bg-[#4caf4f] rounded-[5px] border-solid border-[#4caf4f] text-white flex items-center justify-center"
+              >
+                <a href="#" title="Register">Register</a>
+              </div>
+            </div>
+            <div class="max-w-[415px]">
+              <img
+                src="https://placehold.co/415x435/4caf4f/fff?text=+"
+                alt="banner"
+              />
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div
+            class="flex items-center justify-between mx-auto md:flex-row flex-col-reverse gap-[40px] pr-[9px]"
+          >
+            <div class="flex-1 h-auto opacity-80">
+              <h2 class="font-bold text-[32px] xl:text-[66px] md:text-[40px]">
+                Lessons and insights<br />
+                <span class="text-[#4caf4f]">from 8 years</span>
+              </h2>
+              <p
+                class="text-lg font-regular text-[#1e1e1e] opacity-80 mb-[25px]"
+              >
+                Where to grow your business as a photographer: site or social
+                media?
+              </p>
+              <div
+                class="w-[128px] h-[55px] bg-[#4caf4f] rounded-[5px] border-solid border-[#4caf4f] text-white flex items-center justify-center"
+              >
+                <a href="#" title="Register">Register</a>
+              </div>
+            </div>
+            <div class="max-w-[415px]">
+              <img
+                src="https://placehold.co/415x435/4caf4f/fff?text=+"
+                alt="banner"
+              />
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div
+            class="flex items-center justify-between mx-auto md:flex-row flex-col-reverse gap-[40px] pr-[9px]"
+          >
+            <div class="flex-1 h-auto opacity-80">
+              <h2 class="font-bold text-[32px] xl:text-[66px] md:text-[40px]">
+                Lessons and insights<br />
+                <span class="text-[#4caf4f]">from 8 years</span>
+              </h2>
+              <p
+                class="text-lg font-regular text-[#1e1e1e] opacity-80 mb-[25px]"
+              >
+                Where to grow your business as a photographer: site or social
+                media?
+              </p>
+              <div
+                class="w-[128px] h-[55px] bg-[#4caf4f] rounded-[5px] border-solid border-[#4caf4f] text-white flex items-center justify-center"
+              >
+                <a href="#" title="Register">Register</a>
+              </div>
+            </div>
+            <div class="max-w-[415px]">
+              <img
+                src="https://placehold.co/415x435/4caf4f/fff?text=+"
+                alt="banner"
+              />
+            </div>
+          </div>
+        </swiper-slide>
+        <!-- <div class="flex items-center justify-center gap-[5px] mt-[58px]">
+          <div class="w-[11px] h-[11px] bg-[#4caf4f] rounded-full"></div>
+          <div class="w-[11px] h-[11px] bg-[#c3e1c7] rounded-full"></div>
+          <div class="w-[11px] h-[11px] bg-[#c3e1c7] rounded-full"></div>
+        </div> -->
+      </swiper-container>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </div>
+
+    <!-- Mobile Header -->
+    <header
+      class="mobile-header fixed w-full top-0 bg-dark-gray z-50 px-[20px] py-[15px] md-custom:hidden z-[100]"
+    >
+      <div class="flex items-center justify-between">
+        <button
+          id="menu-bars"
+          class="flex items-center bg-none border-none text-white cursor-pointer text-2xl w-[85px]"
+        >
+          ☰
+        </button>
+        <div class="text-2xl font-bold text-white flex-1 text-center">
+          Nexcent
+        </div>
+        <div class="relative">
+          <div
+            class="top-[-18px] right-[20px] text-white text-lg rounded-full w-[80px] h-[35px] bg-[#4caf4f] flex items-center justify-center"
+          >
+            <button
+              type="button"
+              title="Login"
+              class="text-lg font-inter text-white"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      id="offcanvas-menu"
+      class="mobile-menu-overlay hidden bg-gray-900/80 z-[500] fixed top-0 left-0 right-0 bottom-0"
+    >
+      <div
+        class="layout-menu absolute top-[0px] right-[50px] bg-white flex flex-col items-center py-[20px] px-[40px] z-[1000] top-0 left-0 w-[50%] h-[100vh]"
+      >
+        <button id="close-menu-btn" class="close-btn text-2xl self-end">
+          &times;
+        </button>
+        <div class="menu-body flex flex-col items-center text-left top-[40px]">
+          <ul class="flex flex-col gap-4 ml-[-80px] mt-[40px] box-content ml-0">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <div class="flex items-center gap-[30px] mt-[40px]">
+            <button
+              type="button"
+              title="Login"
+              class="text-lg font-inter text-[#89c98c]"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              title="Sign up"
+              class="text-lg font-inter bg-[#4caf4f] w-[90px] h-[36px] rounded-[5px] border-solid border-[#4caf4f] text-white"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Clients -->
+    <section class="container-custom bg-white">
+      <div>
+        <div class="justify-items-center mt-[50px] text-center">
+          <h2
+            class="font-bold text-3xl lg:text-[45px] text-[#1e1e1e] opacity-80"
+          >
+            Our Clients
+          </h2>
+          <p class="text-lg font-regular text-[#1e1e1e] opacity-80 mt-[20px]">
+            We have been working with some Forture 500+ clients
+          </p>
+        </div>
+        <div
+          class="lg-custom-max:justify-between justify-between xl:gap-[80px] lg:gap-[30px] gap-[20px] mx-auto mt-[50px] flex-wrap flex"
+        >
+          <div class="p-[20px]">
+            <img src="https://placehold.co/50x45" alt="" />
+          </div>
+          <div class="p-[20px]">
+            <img src="https://placehold.co/50x45" alt="" />
+          </div>
+          <div class="p-[20px]">
+            <img src="https://placehold.co/50x45" alt="" />
+          </div>
+          <div class="p-[20px]">
+            <img src="https://placehold.co/50x45" alt="" />
+          </div>
+          <div class="p-[20px]">
+            <img src="https://placehold.co/50x45" alt="" />
+          </div>
+          <div class="p-[20px]">
+            <img src="https://placehold.co/50x45" alt="" />
+          </div>
+          <div class="p-[20px]">
+            <img src="https://placehold.co/50x45" alt="" />
+          </div>
+        </div>
+      </div>
+      <h2
+        class="font-bold text-3xl lg:text-[45px] text-[#1e1e1e] opacity-80 text-center mt-[60px] px-[20px]"
+      >
+        Manager your entire community <br />
+        in a single system
+      </h2>
+      <p
+        class="text-lg font-regular text-[#1e1e1e] opacity-80 text-center mt-[20px] px-[20px]"
+      >
+        Who is Nextcent suitable for?
+      </p>
+      <div
+        class="flex items-center xl-custom:justify-between justify-center gap-[125px] mt-[50px] max-w-[1192px] mx-auto xl-custom:flex-nowrap flex-wrap md-custom-min:flex-row flex-col"
+      >
+        <div
+          class="items-center bg-[#ffffff] max-w-[302px] w-full h-auto p-[25px] shadow-lg text-center rounded-md"
+        >
+          <div class="w-[66px] h-[60px] justify-self-center mb-[18px]">
+            <img
+              class="w-full h-full justify-self-center"
+              src="https://placehold.co/66x60"
+              alt=""
+            />
+          </div>
+          <h3
+            class="font-bold text-lg lg:text-[30px] text-[#1e1e1e] opacity-80 text-center mb-[10px]"
+          >
+            Membership <br />Organisations
+          </h3>
+          <p class="text-[15px] font-regular text-[#1e1e1e] opacity-80">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
+        </div>
+        <div
+          class="items-center bg-[#ffffff] max-w-[302px] w-full h-auto p-[25px] shadow-lg text-center rounded-md"
+        >
+          <div class="w-[66px] h-[60px] justify-self-center mb-[18px]">
+            <img
+              class="w-full h-full justify-self-center"
+              src="https://placehold.co/66x60"
+              alt="national associations"
+            />
+          </div>
+          <h3
+            class="font-bold text-lg lg:text-[30px] text-[#1e1e1e] opacity-80 text-center mb-[10px]"
+          >
+            National<br />Associations
+          </h3>
+          <p class="text-[15px] font-regular text-[#1e1e1e] opacity-80">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
+        </div>
+        <div
+          class="items-center bg-[#ffffff] max-w-[302px] w-full h-auto p-[25px] shadow-lg text-center rounded-md"
+        >
+          <div class="w-[66px] h-[60px] justify-self-center mb-[18px]">
+            <img
+              class="w-full h-full justify-self-center"
+              src="https://placehold.co/66x60"
+              alt=""
+            />
+          </div>
+          <h3
+            class="font-bold text-lg lg:text-[30px] text-[#1e1e1e] opacity-80 text-center mb-[10px]"
+          >
+            Clubs And<br />Groups
+          </h3>
+          <p class="text-[15px] font-regular text-[#1e1e1e] opacity-80">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row mx-auto pt-[105px] pb-[96px] gap-[96px]"
+      >
+        <div class="md-custom-min:justify-items-end justify-items-center">
+          <img
+            class="w-auto h-auto min-w-[322px]"
+            src="https://placehold.co/352x323"
+            alt=""
+          />
+        </div>
+        <div
+          class="max-w-[627px] md:justify-items-normal justify-items-center md:mx-0 mx-auto"
+        >
+          <div>
+            <h2
+              class="font-bold text-xl lg:text-[35px] text-[#1e1e1e] opacity-80 md:text-left text-center mb-[10px] leading-[1.2] mt-[19px]"
+            >
+              The unseen of spending three years at Pixelgrade
+            </h2>
+            <p
+              class="text-lg font-medium text-[#1e1e1e] opacity-80 md:text-left text-center leading-[1.2]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sit
+              amet justo ipsum.Sed accumsan quam vitae metus varius fringgilla.
+              Pellentesque placerat vestibulum lorem sed porta. Nuilam mattis
+              trisque iaculis
+            </p>
+          </div>
+          <div
+            class="justify-self-start bg-[#4caf4f] w-[153px] h-[57px] border-solid border-[#4caf4f] text-white flex items-center justify-center rounded-[5px] mt-[20px] md:justify-self-start justify-self-center"
+          >
+            <a href="#" title="Learn more" class="text-lg font-inter"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Ready to get started -->
+    <section class="bg-[#f5f7fa] px-[20px]">
+      <div
+        class="flex flex-col lg-custom-max:flex-row py-[86px] max-w-[1165px] mx-auto justify-between gap-[30px]"
+      >
+        <div class="">
+          <h2 class="text-[#1e1e1e] text-[45px] font-bold opacity-80">
+            Helping a local <br /><span class="text-[#4caf4f]"
+              >business reinvent itself</span
+            >
+          </h2>
+          <p class="text-[#1e1e1e] opacity-80 text-lg">
+            We reached here with our hard work and dedication
+          </p>
+        </div>
+        <div
+          class="flex items-center max-w-[498px] flex-wrap gap-[20px] justify-between"
+        >
+          <div class="flex items-center gap-[10px] w-[212px]">
+            <div class="w-[45px] h-[45px]">
+              <img src="https://placehold.co/45x45" alt="" />
+            </div>
+            <div>
+              <p class="text-[#1e1e1e] opacity-80 text-[32px] font-bold">
+                2,245,341
+              </p>
+              <p class="text-[#1e1e1e] opacity-80 text-lg">Members</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-[10px] w-[212px]">
+            <div><img src="https://placehold.co/45x45" alt="" /></div>
+            <div>
+              <p class="text-[#1e1e1e] opacity-80 text-[32px] font-bold">
+                46,328
+              </p>
+              <p class="text-[#1e1e1e] opacity-80 text-lg">Clubs</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-[10px] w-[212px]">
+            <div><img src="https://placehold.co/45x45" alt="" /></div>
+            <div>
+              <p class="text-[#1e1e1e] opacity-80 text-[32px] font-bold">
+                828,867
+              </p>
+              <p class="text-[#1e1e1e] opacity-80 text-lg">Event Bookings</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-[10px] w-[212px]">
+            <div><img src="https://placehold.co/45x45" alt="" /></div>
+            <div>
+              <p class="text-[#1e1e1e] opacity-80 text-[32px] font-bold">
+                1,926,436
+              </p>
+              <p class="text-[#1e1e1e] opacity-80 text-lg">Payments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section class="bg-white w-full">
+      <div
+        class="container-custom flex flex-col md:flex-row mx-auto py-[52px] md:gap-[96px] gap-[30px] justify-between"
+      >
+        <div class="max-w-[322px] mx-auto">
+          <img src="https://placehold.co/322x446" alt="" />
+        </div>
+        <div
+          class="flex-1 w-full mx-auto md:mx-0 text-center md:text-left content-center"
+        >
+          <h2
+            class="font-bold text-lg lg:text-[30px] text-[#1e1e1e] opacity-80 mb-4"
+          >
+            How to design your site footer like <br />we did
+          </h2>
+          <p class="text-lg text-[#1e1e1e] opacity-80 mb-4">
+            Donec a eros justo. Fusce egestas tristique ultricies. Nam tempor
+            augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque
+            elit erat a magna. Donec a eros justo. Fusce egestas tristique
+            ultricies. Nam tempor augue nec tincidunt molestie, massa nunc
+            varius arcu, at scelerisque elit erat a magna. Donec a eros justo.
+            Fusce egestas tristique ultricies.
+          </p>
+          <div
+            class="flex justify-center bg-[#4caf4f] w-[153px] h-[57px] border-solid border-[#4caf4f] text-white flex items-center justify-center rounded-[5px] mt-[20px] md-custom:justify-self-start justify-self-center"
+          >
+            <a
+              href="#"
+              title="Learn more"
+              class="text-lg font-inter text-white font-semibold"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#f5f7fa] w-full py-[33px]">
+      <div
+        class="container-custom flex flex-col md:flex-row mx-auto gap-[70px] items-center justify-start"
+      >
+        <div class="max-w-[326px] flex justify-center md:justify-end">
+          <img
+            src="https://placehold.co/326x334"
+            alt=""
+            class="rounded-md shadow-md md-custom-max:min-w-[326px] min-w-[300px]"
+          />
+        </div>
+        <div class="flex-1">
+          <p class="text-[#1e1e1e] opacity-80 mb-4">
+            Maecenas digissim justo eget nulla rutrum molesite. Maecenas
+            loboritis sme dui, vel retrum risus lectus.Maecenas digissim justo
+            eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum
+            risus lectus.Maecenas digissim justo eget nulla rutrum molesite.
+            Maecenas loboritis sme dui, vel retrum risus lectus.Maecenas
+            digissim justo eget nulla rutrum molesite. Maecenas loboritis sme
+            dui, vel retrum risus lectus.justo eget nulla rutrum molesite.
+            Maecenas loboritis sme dui, vel retrum risus lectus.Maecenas
+            digissim justo eget nulla rutrum molesite. Maecenas loboritis sme
+            dui, vel retrum risus lectus. Maecenas loboritis sme dui, vel retrum
+            risus lectus.
+          </p>
+
+          <div class="mb-[9px]">
+            <span class="block font-bold text-[#4caf4f] text-lg"
+              >Tim Smith</span
+            >
+            <p class="text-sm text-[#1e1e1e] opacity-70 mb-[29px]">
+              British Dragon Boat Racing Association
+            </p>
+
+            <div class="flex items-center flex-wrap gap-[35px] mt-4">
+              <div>
+                <img
+                  src="https://placehold.co/50x50"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://placehold.co/50x50"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://placehold.co/50x50"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://placehold.co/50x50"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://placehold.co/50x50"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://placehold.co/50x50"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+
+              <!-- Meet all customers -->
+              <div class="flex items-center gap-2 cursor-pointer">
+                <span class="text-[#4caf4f] font-semibold text-lg"
+                  >Meet all customers</span
+                >
+                <img src="https://placehold.co/17x17" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Caring is the new marketing -->
+    <section class="container-custom">
+      <h2
+        class="text-[#1e1e1e] text-[40px] font-bold opacity-80 text-center mt-[46px]"
+      >
+        Caring is the new marketing
+      </h2>
+      <p
+        class="max-w-[635px] mx-auto text-[#1e1e1e] opacity-80 text-lg text-center mt-[10px]"
+      >
+        Donec a eros justo. Fusce egestas tritique ultricies. Nam tempor.augue
+        nec tincidunt molesite, massa nunv varius arcu, AT SCELERISQUE ELIT erat
+        a magna. Donec a eros justo. Fusce egestas tritique ultricies more.
+      </p>
+      <div
+        class="flex flex-wrap mx-auto xl-custom:justify-between justify-center relative mt-[15px] xl-custom:gap-[17px] gap-[95px]"
+      >
+        <div class="relative flex flex-col">
+          <div class="rounded-md shadow-md">
+            <img class="rounded-md" src="https://placehold.co/369x290" alt="" />
+          </div>
+          <div
+            class="absolute bg-[#f5f7fa] left-1/2 top-[96%] text-center max-w-[315px] w-full h-auto transform -translate-x-1/2 -translate-y-1/2 p-[20px] xs-custom-min:text-[20px] text-[15px] font-semibold text-[#8f8f90] leading-[1.2] rounded-md shadow-md"
+          >
+            <span
+              >Creating Streamlined<br />Safeguarding Processes with
+              OneRen</span
+            >
+            <div
+              class="flex gap-2 text-lg text-[#4caf4f] justify-center mt-[26px]"
+            >
+              <a href="#" title="Readmore" class="flex items-center gap-2"
+                >Readmore <img src="https://placehold.co/17x10" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="relative flex flex-col">
+          <div class="rounded-md shadow-md">
+            <img class="rounded-md" src="https://placehold.co/369x290" alt="" />
+          </div>
+          <div
+            class="absolute bg-[#f5f7fa] left-1/2 top-[96%] text-center max-w-[315px] w-full h-auto transform -translate-x-1/2 -translate-y-1/2 p-[20px] xs-custom-min:text-[20px] text-[15px] font-semibold text-[#8f8f90] leading-[1.2] rounded-md shadow-md"
+          >
+            <span
+              >What are your safeguafaring responsibilities and how can
+              <br />you manage them?</span
+            >
+            <div
+              class="flex gap-2 text-lg text-[#4caf4f] justify-center mt-[26px]"
+            >
+              <a href="#" title="Readmore" class="flex items-center gap-2"
+                >Readmore <img src="https://placehold.co/17x10" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="relative flex flex-col">
+          <div class="rounded-md shadow-md">
+            <img class="rounded-md" src="https://placehold.co/369x290" alt="" />
+          </div>
+          <div
+            class="absolute bg-[#f5f7fa] left-1/2 top-[96%] text-center max-w-[315px] w-full h-auto transform -translate-x-1/2 -translate-y-1/2 p-[20px] xs-custom-min:text-[20px] text-[15px] font-semibold text-[#8f8f90] leading-[1.2] rounded-md shadow-md"
+          >
+            <span
+              >Reamping the Membership<br />Model with Triathlon<br />
+              Australia</span
+            >
+            <div
+              class="flex gap-2 text-lg text-[#4caf4f] justify-center mt-[26px]"
+            >
+              <a href="#" title="Readmore" class="flex items-center gap-2">
+                Readmore
+                <img src="https://placehold.co/17x10" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#f5f7fa]">
+      <div
+        class="container-custom justify-items-center items-center mt-[172px] py-[33px]"
+      >
+        <p
+          class="md-custom-min:text-[60px] sm-custom:text-[40px] text-[30px] font-bold text-[#1e1e1e] opacity-90 text-center"
+        >
+          Pellentesque suscipit <br />fringilla libero eu.
+        </p>
+        <div
+          class="flex justify-center items-center bg-[#4caf4f] w-[180px] h-[52px] border-solid border-[#4caf4f] text-white rounded-[5px] mt-[20px] justify-self-center"
+        >
+          <a
+            href="#"
+            title="Get a Demo"
+            class="flex items-center gap-2 text-md font-inter text-white font-semibold"
+          >
+            Get a Demo
+            <img src="https://placehold.co/17x10" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-[#263238]">
+      <div
+        class="container-custom flex xl-custom:flex-nowrap flex-wrap mx-auto items-start justify-between text-white py-[50px] gap-[30px] xl-custom:gap-0"
+      >
+        <div class="w-[241px] h-auto mr-[250px]">
+          <h2 class="flex items-center gap-2 mb-[39px]">
+            <img src="https://placehold.co/45x45" alt="" />
+            <span class="text-white text-[30px] font-bold">Nexcent</span>
+          </h2>
+          <p class="text-white text-sm mb-[39px] opacity-80">
+            Copyright 2017 Nexcent ltd. ,<br />
+            All rights reserved
+          </p>
+          <div class="flex items-center gap-[12px]">
+            <div><img src="https://placehold.co/35x35" alt="" /></div>
+            <div><img src="https://placehold.co/35x35" alt="" /></div>
+            <div><img src="https://placehold.co/35x35" alt="" /></div>
+            <div><img src="https://placehold.co/35x35" alt="" /></div>
+          </div>
+        </div>
+        <div class="flex xs-custom-min:flex-nowrap flex-wrap gap-[30px]">
+          <div class="w-[134px] h-auto mr-[24px]">
+            <h3 class="text-[20px] mb-[22px]">Company</h3>
+            <ul class="w-[134px] text-[12px] opacity-80 space-y-3">
+              <li><a href="#" title="About Us">About Us</a></li>
+              <li><a href="#" title="Blog">Blog</a></li>
+              <li><a href="#" title="Contact Us">Contact Us</a></li>
+              <li><a href="#" title="Pricing">Pricing</a></li>
+              <li><a href="#" title="Testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="w-[134px] h-auto mr-[54px]">
+            <h3 class="text-[20px] mb-[22px]">Support</h3>
+            <ul class="w-[134px] text-[12px] opacity-80 space-y-3">
+              <li><a href="#" title="Help Center">Help Center</a></li>
+              <li>
+                <a href="#" title="Terms of service">Terms of service </a>
+              </li>
+              <li><a href="#" title="Legal">Legal</a></li>
+              <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+              <li><a href="#" title="Status">Status</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-[280px] h-auto">
+          <h3 class="text-[20px] mb-[22px]">Stay up tp date</h3>
+          <div class="relative max-w-[255px]">
+            <input
+              type="text"
+              placeholder="Your email address"
+              title="Your email address"
+              class="max-w-[255px] p-[8px] rounded-[5px] bg-[#515b60] text-[15px]"
+            />
+            <a
+              href="#"
+              title="Subscribe"
+              class="absolute right-[50px] top-1/2 -translate-y-1/2"
+            >
+              <img src="https://placehold.co/17x17" alt="subscribe" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  // Get menu elements
+  const menuButton = document.getElementById("menu-bars");
+  const closeMenuBtn = document.getElementById("close-menu-btn");
+  const menuOverlay = document.getElementById("offcanvas-menu");
+
+  // Add click event to menu button
+  menuButton.onclick = () => {
+    menuOverlay.style.display = "block";
+  };
+  closeMenuBtn.onclick = () => {
+    menuOverlay.style.display = "none";
+  };
+  menuOverlay.onclick = (e) => {
+    if (e.target === menuOverlay) menuOverlay.style.display = "none";
+  };
+</script>
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+<script>
+  const header = document.getElementById("main-header");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      header.classList.add("shadow-md");
+    } else {
+      header.classList.remove("shadow-md");
+    }
+  });
+</script>
