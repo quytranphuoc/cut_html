@@ -1,0 +1,138 @@
+{
+  "header": {
+    "logo": "Nexcent",
+    "navigation": [
+      { "label": "Home", "href": "#" },
+      { "label": "Service", "href": "#" },
+      { "label": "Feature", "href": "#" },
+      { "label": "Product", "href": "#" },
+      { "label": "Testimonial", "href": "#" },
+      { "label": "FAQ", "href": "#" }
+    ],
+    "loginText": "Login",
+    "signupText": "Sign up"
+  },
+  "hero": {
+    "slides": [
+      {
+        "title": "Lessons and insights",
+        "highlight": "from 8 years",
+        "description": "Where to grow your business as a photographer: site or social media?",
+        "buttonText": "Register"
+      },
+      {
+        "title": "Lessons and insights",
+        "highlight": "from 8 years",
+        "description": "Where to grow your business as a photographer: site or social media?",
+        "buttonText": "Register"
+      },
+      {
+        "title": "Lessons and insights",
+        "highlight": "from 8 years",
+        "description": "Where to grow your business as a photographer: site or social media?",
+        "buttonText": "Register"
+      }
+    ]
+  },
+  "clients": {
+    "title": "Our Clients",
+    "description": "We have been working with some Fortune 500+ clients"
+  },
+  "community": {
+    "title": "Manager your entire community in a single system",
+    "description": "Who is Nextcent suitable for?",
+    "cards": [
+      {
+        "title": "Membership Organisations",
+        "description": "Our membership management software provides full automation of membership renewals and payments"
+      },
+      {
+        "title": "National Associations",
+        "description": "Our membership management software provides full automation of membership renewals and payments"
+      },
+      {
+        "title": "Clubs And Groups",
+        "description": "Our membership management software provides full automation of membership renewals and payments"
+      }
+    ],
+    "about": {
+      "title": "The unseen of spending three years at Pixelgrade",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sit amet justo ipsum.Sed accumsan quam vitae metus varius fringgilla. Pellentesque placerat vestibulum lorem sed porta. Nuilam mattis trisque iaculis",
+      "buttonText": "Learn more"
+    }
+  },
+  "stats": {
+    "title": "Helping a local",
+    "highlight": "business reinvent itself",
+    "description": "We reached here with our hard work and dedication",
+    "metrics": [
+      { "value": "2,245,341", "label": "Members" },
+      { "value": "46,328", "label": "Clubs" },
+      { "value": "828,867", "label": "Event Bookings" },
+      { "value": "1,926,436", "label": "Payments" }
+    ]
+  },
+  "contact": {
+    "title": "How to design your site footer like we did",
+    "description": "Donec a eros justo. Fusce egestas tristique ultricies. Nam tempor augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec a eros justo. Fusce egestas tristique ultricies. Nam tempor augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec a eros justo. Fusce egestas tristique ultricies.",
+    "buttonText": "Learn more"
+  },
+  "testimonial": {
+    "quote": "Maecenas digissim justo eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum risus lectus.Maecenas digissim justo eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum risus lectus.Maecenas digissim justo eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum risus lectus.Maecenas digissim justo eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum risus lectus.justo eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum risus lectus.Maecenas digissim justo eget nulla rutrum molesite. Maecenas loboritis sme dui, vel retrum risus lectus. Maecenas loboritis sme dui, vel retrum risus lectus.",
+    "author": "Tim Smith",
+    "position": "British Dragon Boat Racing Association",
+    "meetAllText": "Meet all customers"
+  },
+  "blog": {
+    "title": "Caring is the new marketing",
+    "description": "Donec a eros justo. Fusce egestas tritique ultricies. Nam tempor.augue nec tincidunt molesite, massa nunv varius arcu, AT SCELERISQUE ELIT erat a magna. Donec a eros justo. Fusce egestas tritique ultricies more.",
+    "articles": [
+      {
+        "title": "Creating Streamlined Safeguarding Processes with OneRen",
+        "readMoreText": "Readmore"
+      },
+      {
+        "title": "What are your safeguafaring responsibilities and how can you manage them?",
+        "readMoreText": "Readmore"
+      },
+      {
+        "title": "Reamping the Membership Model with Triathlon Australia",
+        "readMoreText": "Readmore"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Pellentesque suscipit fringilla libero eu.",
+    "buttonText": "Get a Demo"
+  },
+  "footer": {
+    "logo": "Nexcent",
+    "copyright": "Copyright 2017 Nexcent ltd. , All rights reserved",
+    "sections": [
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About Us", "href": "#" },
+          { "label": "Blog", "href": "#" },
+          { "label": "Contact Us", "href": "#" },
+          { "label": "Pricing", "href": "#" },
+          { "label": "Testimonials", "href": "#" }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          { "label": "Help Center", "href": "#" },
+          { "label": "Terms of service", "href": "#" },
+          { "label": "Legal", "href": "#" },
+          { "label": "Privacy Policy", "href": "#" },
+          { "label": "Status", "href": "#" }
+        ]
+      }
+    ],
+    "newsletter": {
+      "title": "Stay up to date",
+      "placeholder": "Your email address"
+    }
+  }
+}
