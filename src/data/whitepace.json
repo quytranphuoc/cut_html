@@ -1,0 +1,413 @@
+{
+  "header": {
+    "logo": "Whitepace",
+    "logoUrl": "https://placehold.co/27x24/c4defd/000000",
+    "navigation": [
+      {
+        "id": 1,
+        "label": "Products",
+        "href": "#",
+        "imageUrl": "https://placehold.co/17x10",
+        "subItems": [
+          {
+            "id": 11,
+            "label": "Product 1",
+            "href": "#product1"
+          },
+          {
+            "id": 12,
+            "label": "Product 2",
+            "href": "#product2"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Solutions",
+        "href": "#",
+        "imageUrl": "https://placehold.co/17x10",
+        "subItems": [
+          {
+            "id": 21,
+            "label": "Solution 1",
+            "href": "#solution1"
+          },
+          {
+            "id": 22,
+            "label": "Solution 2",
+            "href": "#solution2"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Resources",
+        "href": "#",
+        "imageUrl": "https://placehold.co/17x10",
+        "subItems": [
+          {
+            "id": 31,
+            "label": "Resource 1",
+            "href": "#resource1"
+          },
+          {
+            "id": 32,
+            "label": "Resource 2",
+            "href": "#resource2"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "label": "Pricing",
+        "href": "#",
+        "imageUrl": "https://placehold.co/17x10",
+        "subItems": [
+          {
+            "id": 31,
+            "label": "Resource 1",
+            "href": "#resource1"
+          },
+          {
+            "id": 32,
+            "label": "Resource 2",
+            "href": "#resource2"
+          }
+        ]
+      }
+    ],
+    "loginText": "Login",
+    "tryFreeText": "Try Whitepace free",
+    "href": "https://github.com/quytranphuoc/cut_html/blob/feat/ui-whitepace/index.html"
+  },
+  "hero": {
+    "title": "Get More Done with Whitepace",
+    "description": "Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks",
+    "buttonText": "Try Whitepace free",
+    "imageUrl": "https://placehold.co/620x411/c4defd/000000",
+    "imageAlt": "Hero Image"
+  },
+  "project_management": {
+    "title": "Project Management",
+    "description": "Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Task photos with the mobile app and save them to notes.",
+    "imageUrl": "https://placehold.co/559x411/c4defd/000000",
+    "imageAlt": "Hero Image",
+    "buttonText": "Get Started"
+  },
+  "work_together": {
+    "title": "Work Together",
+    "description": " With Whitepace, share your notes your colleagues on them. You can also publish a note to the internet and share the URL with others.",
+    "imageUrl": "https://placehold.co/532x510/c4defd/000000",
+    "imageAlt": "Hero Image",
+    "buttonText": "Try it now"
+  },
+  "use_as_extension": {
+    "title": "Use as Extension",
+    "description": " Use the web clipper extension, avalable on Chrome and Firefox, to save web pages or take screenshots as notes.",
+    "imageUrl": "https://placehold.co/512x363/c4defd/000000",
+    "imageAlt": "Hero Image",
+    "buttonText": "Let's go"
+  },
+  "customise": {
+    "title": "Customise it to your needs",
+    "description": "  Use the web clipper extension, avalable on Chrome and Firefox, to save web pages or take screenshots as notes.",
+    "imageUrl": "https://placehold.co/512x363/c4defd/000000",
+    "imageAlt": "Hero Image",
+    "buttonText": "Let's go"
+  },
+  "blog": {
+    "title": "Choose your plan",
+    "description": "Whether you want to get arpabized, keep persiona life on trac, or boost workplace productivity. Evernote has the right plan for you.",
+    "imageUrl": "https://placehold.co/512x363/c4defd/000000",
+    "imageAlt": "Hero Image",
+    "articles": [
+      {
+        "id": 1,
+        "title": "Capture ideas and find them quickly",
+        "label": "Free",
+        "cost": "$0",
+        "description": [
+          {
+            "id": 1,
+            "iconUrl": "https://placehold.co/17x17",
+            "text": "Sync unimimied devices"
+          },
+          {
+            "iconUrl": "https://placehold.co/17x17",
+            "id": 2,
+            "text": "10GB monthly uploads"
+          },
+          {
+            "iconUrl": "https://placehold.co/17x17",
+            "id": 3,
+            "text": "200 MB max, note size"
+          },
+          {
+            "iconUrl": "https://placehold.co/17x17",
+            "id": 4,
+            "text": "Customixe Home dashboard and access extra widgets"
+          },
+          {
+            "iconUrl": "https://placehold.co/17x17",
+            "id": 5,
+            "text": "Connect primat Google Caiendar account"
+          },
+          {
+            "iconUrl": "https://placehold.co/17x17",
+            "id": 6,
+            "text": "Add due dates, reminders, and notificions to your tasks"
+          }
+        ],
+        "readMoreText": "Get Started"
+      },
+      {
+        "id": 2,
+        "label": "Personal",
+        "title": "Keep home and family on track",
+        "cost": "$11.99",
+        "description": [
+          {
+            "id": 1,
+            "text": "Sync unimimied devices"
+          },
+          {
+            "id": 2,
+            "text": "10GB monthly uploads"
+          },
+          {
+            "id": 3,
+            "text": "200 MB max, note size"
+          },
+          {
+            "id": 4,
+            "text": "Customixe Home dashboard and access extra widgets"
+          },
+          {
+            "id": 5,
+            "text": "Connect primat Google Caiendar account"
+          },
+          {
+            "id": 6,
+            "text": "Add due dates, reminders, and notificions to your tasks"
+          }
+        ],
+        "readMoreText": "Get Started"
+      },
+      {
+        "id": 3,
+        "title": "Capture ideas and find them quickly",
+        "label": "Organization",
+        "cost": "$49.99",
+        "description": [
+          {
+            "id": 1,
+            "text": "Sync unimimied devices"
+          },
+          {
+            "id": 2,
+            "text": "10GB monthly uploads"
+          },
+          {
+            "id": 3,
+            "text": "200 MB max, note size"
+          },
+          {
+            "id": 4,
+            "text": "Customixe Home dashboard and access extra widgets"
+          },
+          {
+            "id": 5,
+            "text": "Connect primat Google Caiendar account"
+          },
+          {
+            "id": 6,
+            "text": "Add due dates, reminders, and notificions to your tasks"
+          }
+        ],
+        "readMoreText": "Get Started"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Your work, everywhere you are.",
+    "description": "Access your notes from your computer, phone or tablet by synchronising with voriois services, including whitepace, Dropbox and OneDrive. The app i s available on Windows, Mac, iOS and Android. A terminal app is available.",
+    "imageUrl": "https://placehold.co/514x295/c4defd/000000",
+    "imageAlt": "Your work, everywhere you are",
+    "buttonText": "Try Taskey",
+    "isImageLeft": true
+  },
+  "your_data": {
+    "title": "100% your data",
+    "description": "The app is open scource and your notes are saved to an open format, so you'll always have access to them. Users End-To-End Enorypotion (E2EE) to secure your notes and ensure no-one but yourself can access them.",
+    "imageUrl": "https://placehold.co/514x295/c4defd/000000",
+    "imageAlt": "Hero Image",
+    "buttonText": "Read more"
+  },
+  "our_sponsors": {
+    "title": "Our sponsors",
+    "icons": [
+      {
+        "id": 1,
+        "iconUrl": "https://placehold.co/65x65/c4defd/000000"
+      },
+      {
+        "id": 2,
+        "iconUrl": "https://placehold.co/233x65/c4defd/000000"
+      },
+      {
+        "id": 3,
+        "iconUrl": "https://placehold.co/233x65/c4defd/000000"
+      },
+      {
+        "id": 4,
+        "iconUrl": "https://placehold.co/233x65/c4defd/000000"
+      }
+    ]
+  },
+  "work_with_your": {
+    "title": "Work with Your Favorite Apps Using Whitepace",
+    "description": "Whitepace teams up with your favorite. Intergrate with over 1000+ apps with Zapier to have all the tools you need for your project success.",
+    "imageAlt": "Hero Image",
+    "imageUrl": "https://placehold.co/514x295/c4defd/000000",
+    "buttonText": "Read more",
+    "isImageLeft": true
+  },
+  "clients_say": {
+    "title": "What Our Clients say",
+    "quotes": [
+      {
+        "id": 1,
+        "quotes": [
+          {
+            "iconUrl": "https://placehold.co/72x48/",
+            "quote": "Whitepace is designed as a collaboration tool for business that is a full project management solution.",
+            "author": "John Doe"
+          }
+        ],
+        "author": [
+          {
+            "avatarUrl": "https://placehold.co/72x48/c4defd/000000",
+            "name": "Oberon Shaw, MCH",
+            "position": "Head of Talent Acquisition, North America"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "quotes": [
+          {
+            "iconUrl": "https://placehold.co/72x48/",
+            "quote": "Whitepace is a project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks",
+            "author": "John Doe"
+          }
+        ],
+        "author": [
+          {
+            "avatarUrl": "https://placehold.co/72x48/c4defd/000000",
+            "name": "Oberon Shaw, MCH",
+            "position": "Head of Talent Acquisition, North America"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "quotes": [
+          {
+            "iconUrl": "https://placehold.co/72x48",
+            "quote": "Whitepace is a project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks",
+            "author": "John Doe"
+          }
+        ],
+        "author": [
+          {
+            "avatarUrl": "https://placehold.co/72x48/c4defd/000000",
+            "name": "Oberon Shaw, MCH",
+            "position": "Head of Talent Acquisition, North America"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "logoUrl": "https://placehold.co/27x24/c4defd/000000",
+    "description": "Get started for tree.",
+    "description2": "Add your whole team as your needs grow.",
+    "description3": "On a big team? Contact sales",
+    "label": "Try Whitepace today",
+    "buttonText": "Try Whitepace free",
+    "logo": "Whitepace",
+
+    "copyright": "Whitepace was created for the new ways we live and work. We make a better workspace around the world.",
+    "icons": [
+      {
+        "id": 1,
+        "iconUrl": "https://placehold.co/63x63/c4defd/000000"
+      },
+      {
+        "id": 2,
+        "iconUrl": "https://placehold.co/63x63/c4defd/000000"
+      },
+      {
+        "id": 3,
+        "iconUrl": "https://placehold.co/63x63/c4defd/000000"
+      }
+    ],
+    "sections": [
+      {
+        "id": 1,
+        "title": "Product",
+        "links": [
+          { "id": 1, "label": "Overview", "href": "#" },
+          { "id": 2, "label": "Pricing", "href": "#" },
+          { "id": 3, "label": "Customers stories", "href": "#" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Resources",
+        "links": [
+          { "id": 1, "label": "Blog", "href": "#" },
+          { "id": 2, "label": "Guides & tutorials", "href": "#" },
+          { "id": 3, "label": "Help center", "href": "#" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Company",
+        "links": [
+          { "id": 1, "label": "About", "href": "#" },
+          { "id": 2, "label": "Careers", "href": "#" },
+          { "id": 3, "label": "Media kit", "href": "#" }
+        ]
+      }
+    ],
+    "newsletter": {
+      "title": "Try it Today",
+      "description": "Get started for tree. Add your whole team as your needs grow.",
+      "buttonText": "Start today"
+    },
+    "bottom": {
+      "links": [
+        {
+          "id": 1,
+          "label": "English",
+          "href": "#",
+          "iconUrl1": "https://placehold.co/63x63/c4defd/000000",
+          "iconUrl2": "https://placehold.co/63x63/c4defd/000000"
+        },
+        { "id": 2, "label": "Teams & privacy", "href": "#" },
+        { "id": 3, "label": "Security", "href": "#" },
+        { "id": 4, "label": "Status", "href": "#" },
+        { "id": 5, "label": "© 2021 Whitepace LLC.", "href": "#" }
+      ],
+      "icons": [
+        {
+          "id": 1,
+          "iconUrl": "https://placehold.co/63x63/c4defd/000000"
+        },
+        { "id": 2, "iconUrl": "https://placehold.co/63x63/c4defd/000000" },
+        { "id": 3, "iconUrl": "https://placehold.co/63x63/c4defd/000000" }
+      ]
+    }
+  }
+}
