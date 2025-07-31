@@ -63,8 +63,14 @@
   font-family: var(--font-gilroy);
 }
 
+.padding-custom {
+  padding: 20px;
+}
+
 body {
   margin: 0;
   background-color: #ffffff;
   font-family: var(--font-gilroy);
+  line-height: inherit;
+
 }
